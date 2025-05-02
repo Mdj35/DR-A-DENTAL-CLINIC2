@@ -65,6 +65,7 @@ export const Nav = styled.nav`
 
 export const NavLink = styled.a`
   font-size: 0.5rem;
+  color: #c1b9a9;
 
   @media (min-width: 640px) {
     font-size: 0.625rem;

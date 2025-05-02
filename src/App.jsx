@@ -32,6 +32,7 @@ import {
 } from "./Design";
 import CarouselSection from "./Carousel";
 import Footer from "./Footer";
+import logo from "./1 (1).png"
 
 const DentalClinic = () => {
   return (
@@ -40,7 +41,7 @@ const DentalClinic = () => {
       <Header>
         <LogoWrapper>
           <Logo
-            src="https://storage.googleapis.com/a1aa/image/d82a2b6b-a1a2-4fa4-d65c-f763e0747495.jpg"
+            src={logo}
             alt="Logo of Dr. A Dental Clinic"
           />
           <ClinicName>DR. A DENTAL CLINIC</ClinicName>
@@ -56,7 +57,7 @@ const DentalClinic = () => {
 
       <Main>
         <BackgroundImage
-          src="https://storage.googleapis.com/a1aa/image/2c9c3f3d-aafa-4414-0744-7f7b65652c2d.jpg"
+          src={logo}
           alt="Background heart logo"
         />
         <ContentWrapper>

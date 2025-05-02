@@ -19,6 +19,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faPhoneAlt, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import logo from "./2 (1).png";
 
 const Footer = () => {
   return (
@@ -85,7 +86,7 @@ const Footer = () => {
 
         <FooterSection>
           <FooterLogo
-            src="https://storage.googleapis.com/a1aa/image/f996f128-cc14-4aaa-e672-4ada15739822.jpg"
+            src={logo}
             alt="Logo"
           />
         </FooterSection>
