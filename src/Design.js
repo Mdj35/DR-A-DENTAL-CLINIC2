@@ -230,3 +230,40 @@ export const CardText = styled.p`
   text-transform: uppercase;
   line-height: 1.2;
 `;
+export const ActivitiesSection = styled.section`
+  background-color: white;
+  padding: 3rem 1rem;
+  max-width: 96rem;
+  margin: 0 auto;
+`;
+
+export const ActivitiesHeading = styled.h2`
+  text-align: center;
+  color: #4b2e0e;
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+`;
+
+export const ActivitiesGrid = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+`;
+
+export const ActivityCard = styled.div`
+  width: 10rem;
+  height: 7rem;
+  background-color: #d1d5db; /* Tailwind's gray-300 */
+  position: relative;
+`;
+
+export const ActivityBar = styled.div`
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1.5rem;
+  background-color: #4b2e0e;
+`;

@@ -24,7 +24,14 @@ import {
   ServicesGrid,
   ServiceCard,
   CardText,
+  ActivitiesSection,
+  ActivitiesHeading,
+  ActivitiesGrid,
+  ActivityCard,
+  ActivityBar,
 } from "./Design";
+import CarouselSection from "./Carousel";
+import Footer from "./Footer";
 
 const DentalClinic = () => {
   return (
@@ -86,6 +93,18 @@ const DentalClinic = () => {
           ))}
         </ServicesGrid>
       </ServicesSection>
+      <ActivitiesSection>
+        <ActivitiesHeading>Recent Activities</ActivitiesHeading>
+        <ActivitiesGrid>
+          {[...Array(4)].map((_, i) => (
+            <ActivityCard key={i}>
+              <ActivityBar />
+            </ActivityCard>
+          ))}
+        </ActivitiesGrid>
+      </ActivitiesSection>
+      <CarouselSection />
+      <Footer />
     </>
   );
 };
