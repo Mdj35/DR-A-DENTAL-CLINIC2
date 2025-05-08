@@ -20,7 +20,7 @@ export const MobileNav = styled.div`
   position: absolute;
   top: 100%;
   left: 0;
-  width: 100%;
+  width: 95%;
   padding: 1rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   z-index: 999;
