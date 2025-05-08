@@ -32,34 +32,17 @@ import {
 } from "./Design";
 import CarouselSection from "./Carousel";
 import Footer from "./Footer";
-import logo from "./1 (1).png"
+import logo from "./1 (1).png";
+import HeaderSection from "./Header";
 
 const DentalClinic = () => {
   return (
     <>
       <GlobalStyle />
-      <Header>
-        <LogoWrapper>
-          <Logo
-            src={logo}
-            alt="Logo of Dr. A Dental Clinic"
-          />
-          <ClinicName>DR. A DENTAL CLINIC</ClinicName>
-        </LogoWrapper>
-        <Nav>
-          <a href="#">Home</a>
-          <a href="#">Services</a>
-          <a href="#">Know us</a>
-          <a href="#">Recent Activities</a>
-        </Nav>
-        <ContactButton>Contact Us</ContactButton>
-      </Header>
 
+      <HeaderSection />
       <Main>
-        <BackgroundImage
-          src={logo}
-          alt="Background heart logo"
-        />
+        <BackgroundImage src={logo} alt="Background heart logo" />
         <ContentWrapper>
           <Headline>
             Dedicated to Smiles,

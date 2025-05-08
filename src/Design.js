@@ -1,6 +1,50 @@
 // DentalClinicStyles.js
 import styled, { createGlobalStyle } from "styled-components";
+import { FiMenu, FiX } from "react-icons/fi"; // Ensure you're importing icons in your component file
 
+export const MenuIcon = styled.div`
+  display: block;
+  cursor: pointer;
+  color: #6b4a2e;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+`;
+
+export const MobileNav = styled.div`
+  display: ${({ open }) => (open ? "flex" : "none")};
+  flex-direction: column;
+  align-items: flex-start;
+  background: white;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  z-index: 999;
+
+  a {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #6b4a2e;
+    margin-bottom: 1rem;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  button {
+    margin-top: 1rem;
+  }
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+`;
 // Global styles
 export const GlobalStyle = createGlobalStyle`
   body {
@@ -14,14 +58,25 @@ export const GlobalStyle = createGlobalStyle`
 `;
 
 export const Header = styled.header`
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem 1.5rem;
   max-width: 1120px;
   margin: 0 auto;
+  width: 95%;
 `;
-
+export const NavLink = styled.a`
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+`;
 export const LogoWrapper = styled.div`
   display: flex;
   align-items: center;
@@ -87,7 +142,7 @@ export const Main = styled.main`
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 1.5rem;
+  padding: 15rem 1.5rem 1.5rem; /* Added top padding */
   text-align: center;
   max-width: 768px;
   margin: 0 auto;
@@ -164,7 +219,7 @@ export const Divider = styled.div`
 `;
 export const ServicesSection = styled.section`
   background-color: white;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   padding: 2.5rem 1rem;
   max-width: 1120px;
   margin: 0 auto;
@@ -173,7 +228,7 @@ export const ServicesSection = styled.section`
 export const SubHeading = styled.p`
   font-size: 10px;
   font-weight: 800;
-  color: #5B3A0A;
+  color: #5b3a0a;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 0.5rem;
@@ -182,7 +237,7 @@ export const SubHeading = styled.p`
 export const MainHeading = styled.h2`
   font-size: 1.875rem;
   font-weight: 800;
-  color: #5B3A0A;
+  color: #5b3a0a;
   text-align: center;
   margin-bottom: 1.5rem;
 `;
@@ -194,7 +249,7 @@ export const ServiceFilter = styled.div`
 `;
 
 export const FilterButton = styled.button`
-  background-color: #5B3A0A;
+  background-color: #5b3a0a;
   color: white;
   font-size: 0.875rem;
   font-weight: 600;
@@ -226,7 +281,7 @@ export const ServiceCard = styled.div`
 export const CardText = styled.p`
   font-size: 10px;
   font-weight: 800;
-  color: #5B3A0A;
+  color: #5b3a0a;
   text-transform: uppercase;
   line-height: 1.2;
 `;
