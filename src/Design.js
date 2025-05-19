@@ -68,9 +68,8 @@ export const Header = styled.header`
   align-items: center;
   justify-content: space-between;
   padding: 1rem 1.5rem;
-  max-width: 1120px;
   margin: 0 auto;
-  width: 95%;
+  width: 97%;
 `;
 export const NavLink = styled.a`
   text-decoration: none;
@@ -144,27 +143,25 @@ export const Main = styled.main`
   position: relative;
   padding: 15rem 1.5rem 1.5rem; /* Added top padding */
   text-align: center;
-  max-width: 768px;
+  max-width: 100%;
   margin: 0 auto;
 `;
 
 export const BackgroundImage = styled.img`
   position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  opacity: 0.1;
   pointer-events: none;
   user-select: none;
-  max-width: 600px;
-  max-height: 400px;
-  margin: auto;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
 `;
 
 export const ContentWrapper = styled.div`
   position: relative;
-  z-index: 10;
+  z-index: 2;
 `;
 
 export const Headline = styled.h1`
